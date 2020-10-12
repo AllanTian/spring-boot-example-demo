@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+memcached:
+  #memcached服务器节点(格式为host:port)IP:端口号
+  servers: 127.0.0.1:11211
+  # 设置接口操作的默认超时时间，可以被接口覆盖
+  opTimeout: 3000
+  # nio连接池的数量
+  poolSize: 10
+  # 是否启用失败模式，默认为false
+  failureMode: false
+  # 是否使用memcached缓存
+  enabled: true
+
