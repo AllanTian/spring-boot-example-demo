@@ -17,6 +17,7 @@
 
     <packaging>pom</packaging>
 
+
     <properties>
         <java.version>1.8</java.version>
         <maven.version>3.8.1</maven.version>
@@ -27,7 +28,16 @@
 
     <modules>
         <module>spring-boot-memcache-xmemcached</module>
+        <module>spring-boot-jdbc</module>
     </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
 
 
     <build>
