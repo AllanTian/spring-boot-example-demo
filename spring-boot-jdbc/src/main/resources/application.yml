@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    #指定数据库驱动
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #数据库类型
+    platform: mysql
+    #数据库jdbc连接url地址,serverTimezone设置数据库时区 Asia/Shanghai
+    url: jdbc:mysql://localhost:3306/springboot-jdbc?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    #数据库账号
+    username: root
+    #数据库密码
+    password: root
